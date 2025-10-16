@@ -21,6 +21,11 @@ spring:
           starttls:
             enable: true
 
+
+sms-service:
+  base-url: "https://richcommunication.dialog.lk/client-area/index.php/cbs/sms/send"
+  token: "c5ca6680cf7dcf1"
+  
 eureka:
   client:
     register-with-eureka: true
@@ -44,10 +49,6 @@ vehicle:
   default:
     model: cross over
 duration: all
-
-site: 
-  file-share:
-    url: http://localhost:9191/share-doc/view/
 
 openapi:
   service:
