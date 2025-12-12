@@ -26,3 +26,7 @@ eureka:
 openapi:
   service:
     url: https://v4.auradocs.com/api
+
+undersecretary:
+  key:
+    password: "auradocsuserkeystore"
