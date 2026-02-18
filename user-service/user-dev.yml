@@ -26,3 +26,11 @@ eureka:
 openapi:
   service:
     url: http://localhost:9191
+
+keycloak:
+  auth-server-url: http://localhost:8080
+  realm: auraDOCS
+  admin:
+    username: admin
+    password: admin123
+    client-id: admin-cli

@@ -1,5 +1,39 @@
 spring:
-  application:
-    name: archive
-#server:
-  #port: 9192
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://mysql:3306/auradocs_auradot?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&useSSL=false
+    username: root
+    password: Aura2528@
+  jpa:
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+      ddl-auto: update
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://discovery-service:8761/eureka
+    # healthcheck:
+    #   enabled: true
+  instance:
+    preferIpAddress: true
+    instance-id: ${spring.application.name}-${random.int}
+    # hostname: localhost
+
+member:
+  rent:
+    min: 8
+    max: 31
+  price:
+    discount: 3
+vehicle:
+  default:
+    model: cross over
+duration: all
+
+openapi:
+  service:
+    url: http://api-service:8080

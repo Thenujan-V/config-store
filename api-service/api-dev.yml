@@ -2,6 +2,26 @@ server:
   servlet:
     context-path: /
 
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8080/realms/auraDOCS
+
+
+
+keycloak:
+  realm: auraDOCS
+  auth-server-url: http://localhost:8080/
+  resource: auradocs
+  public-client: true
+
+  bearer-only: true
+  use-resource-role-mappings: true
+  auth-endpoint: ${keycloak.auth-server-url}realms/${keycloak.realm}/protocol/openid-connect/auth
+  token-url: ${keycloak.auth-server-url}realms/${keycloak.realm}/protocol/openid-connect/token
+
 eureka:
   client:
     register-with-eureka: true
