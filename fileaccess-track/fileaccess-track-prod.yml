@@ -9,6 +9,8 @@ spring:
       naming:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
       ddl-auto: update
+  elasticsearch:
+    uris: http://elasticsearch:9200
 
 eureka:
   client:
@@ -22,6 +24,7 @@ eureka:
     preferIpAddress: true
     instance-id: ${spring.application.name}-${random.int}
     # hostname: localhost
+
 
 member:
   rent:
