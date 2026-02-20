@@ -23,7 +23,7 @@ eureka:
 
 keycloak:
   realm: auraDOCS
-  auth-server-url: http://keycloak:8181/
+  auth-server-url: http://keycloak:8080/
   resource: auradocs
   public-client: true
 
