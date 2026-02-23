@@ -7,7 +7,8 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: http://keycloak:8080/realms/auraDOCS
+          issuer-uri: http://sso.aura.com:8181/realms/auraDOCS
+          jwk-set-uri: http://keycloak:8080/realms/auraDOCS/protocol/openid-connect/certs
 
 eureka:
   client:
@@ -28,8 +29,8 @@ keycloak:
 
   bearer-only: true
   use-resource-role-mappings: true
-  auth-endpoint: ${keycloak.auth-server-url}realms/${keycloak.realm}/protocol/openid-connect/auth
-  token-url: ${keycloak.auth-server-url}realms/${keycloak.realm}/protocol/openid-connect/token
+  auth-endpoint: http://sso.aura.com:8181/realms/${keycloak.realm}/protocol/openid-connect/auth
+  token-url: http://sso.aura.com:8181/realms/${keycloak.realm}/protocol/openid-connect/token
 
 openapi:
   service:
