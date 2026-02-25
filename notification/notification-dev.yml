@@ -1,4 +1,10 @@
 spring:
+  application:
+    name: notification
+  profiles:
+    active: dev
+  banner:
+    location: classpath:banner.txt
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/auradocs_auradot?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&useSSL=false
@@ -53,3 +59,47 @@ duration: all
 openapi:
   service:
     url: http://localhost:9191
+
+
+server:
+  port: 0
+
+management:
+  tracing:
+    sampling:
+      probability: 1.0
+
+services:
+  fileaccess-track:
+    url: http://fileaccess-track/logging
+
+hystrix:
+  timeout: 5000
+
+openapi:
+  service:
+    title: Notification Service
+    description: Notification related Operations in AuraDOCS V4 Micro Services
+    version: 1.0.0-SNAPSHOT
+    url: http://localhost:9191
+  contact:
+    name: AuraDOT PVT Ltd.
+    email: contact@auradot.com
+springdoc:
+  api-docs:
+    path: /notification/api-docs
+  swagger-ui:
+    path: /notification/swagger-ui.html
+
+wsocket:
+  destination:
+    prefix: /app
+  broker:
+    topic-prefix: /topic
+    user-prefix: /queue
+  endpoints:
+    path: /ws
+  notification:
+    endpoint: /queue/notifications
+  broadcast:
+    endpoint: /topic/notifications
