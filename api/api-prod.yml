@@ -23,14 +23,13 @@ eureka:
 
 keycloak:
   realm: auraDOCS
-  auth-server-url: http://keycloak:8080/
+  auth-server-url: http://keycloak:8080/auth
   resource: auradocs
   public-client: true
-
   bearer-only: true
   use-resource-role-mappings: true
-  auth-endpoint: http://sso.aura.com:8181/realms/${keycloak.realm}/protocol/openid-connect/auth
-  token-url: http://sso.aura.com:8181/realms/${keycloak.realm}/protocol/openid-connect/token
+  # auth-endpoint: http://sso.aura.com:8181/realms/${keycloak.realm}/protocol/openid-connect/auth
+  # token-url: http://sso.aura.com:8181/realms/${keycloak.realm}/protocol/openid-connect/token
 
 openapi:
   service:
