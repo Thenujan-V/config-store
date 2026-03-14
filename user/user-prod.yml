@@ -22,8 +22,6 @@ eureka:
     preferIpAddress: true
     instance-id: ${spring.application.name}-${random.int}
     # hostname: localhost
-  elasticsearch:
-    uris: http://elasticsearch:9200
 
 openapi:
   service:
@@ -36,3 +34,8 @@ keycloak:
     username: admin
     password: admin123
     client-id: admin-cli
+
+management:
+  health:
+    elasticsearch:
+      enabled: false
