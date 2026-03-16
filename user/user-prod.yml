@@ -9,6 +9,10 @@ spring:
       naming:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
       ddl-auto: update
+  data:
+    elasticsearch:
+      repositories:
+        enabled: false
 
 eureka:
   client:
@@ -38,4 +42,6 @@ keycloak:
 management:
   health:
     elasticsearch:
+      enabled: false
+    reactive-elasticsearch:
       enabled: false

@@ -39,3 +39,5 @@ management:
   health:
     elasticsearch:
       enabled: false
+    reactive-elasticsearch:
+      enabled: false

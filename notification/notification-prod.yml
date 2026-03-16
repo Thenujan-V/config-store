@@ -20,6 +20,10 @@ spring:
           auth: true
           starttls:
             enable: true
+  data:
+    elasticsearch:
+      repositories:
+        enabled: false
 
 
 sms-service:
@@ -57,4 +61,6 @@ openapi:
 management:
   health:
     elasticsearch:
+      enabled: false
+    reactive-elasticsearch:
       enabled: false
