@@ -12,3 +12,8 @@ eureka:
     preferIpAddress: true
     instance-id: ${spring.application.name}-${random.int}
     # hostname: localhost
+
+management:
+  health:
+    elasticsearch:
+      enabled: false

@@ -34,3 +34,8 @@ keycloak:
 openapi:
   service:
     url: http://api-service:8080
+
+management:
+  health:
+    elasticsearch:
+      enabled: false
