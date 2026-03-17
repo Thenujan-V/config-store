@@ -2,8 +2,8 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
 # url: jdbc:mysql://mysql:3306/auradocs_auradot?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&useSSL=false
-    url: jdbc:mysql://auradocs.cf800uasaez3.ap-south-1.rds.amazonaws.com:3036/auradocs_auradot?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&useSSL=false    username: auradocs_dbsql
-    username: auradocs_dbsql
+    url: jdbc:mysql://auradocs.cf800uasaez3.ap-south-1.rds.amazonaws.com:3036/auradocs_v4?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&useSSL=false    username: root
+    username: root
     password: W9fil8@lbru1kOPbv
   jpa:
     hibernate:
