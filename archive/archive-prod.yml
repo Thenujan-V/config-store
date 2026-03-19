@@ -3,7 +3,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://auradocs.cf800uasaez3.ap-south-1.rds.amazonaws.com:3306/auradocs_v4?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&useSSL=false
     username: root
-    password: W9fil8@lbru1kOPbv
+    password: kZzLkzMdkl2fzysZu2mO
   jpa:
     hibernate:
       naming:
