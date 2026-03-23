@@ -38,7 +38,7 @@ keycloak:
   admin:
     username: auradocs@admin
     password: auraAdmin@123
-    client-id: admin-cli
+    client-id: auradocs
 
 management:
   health:
