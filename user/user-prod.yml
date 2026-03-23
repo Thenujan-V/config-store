@@ -36,8 +36,8 @@ keycloak:
   auth-server-url: http://keycloak:8080
   realm: auraDOCS
   admin:
-    username: admin
-    password: admin123
+    username: auradocs@admin
+    password: auraAdmin@123
     client-id: admin-cli
 
 management:
