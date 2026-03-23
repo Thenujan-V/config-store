@@ -1,8 +1,8 @@
 spring:
   application:
     name: search
-  profiles:
-    active: dev 
+  # profiles:
+  #   active: dev 
   banner:
     location: classpath:banner.txt 
   data:

@@ -1,8 +1,8 @@
 spring:
   application:
     name: discovery
-  profiles:
-    active: dev
+  # profiles:
+  #   active: dev
   banner:
     location: classpath:banner.txt 
   config: 

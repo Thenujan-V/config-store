@@ -1,8 +1,8 @@
 spring:
   application:
     name: notification
-  profiles:
-    active: dev
+  # profiles:
+  #   active: dev
   banner:
     location: classpath:banner.txt
   datasource:

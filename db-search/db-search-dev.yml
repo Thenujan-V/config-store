@@ -1,8 +1,8 @@
 spring:
   application:
     name: db-search
-  profiles:
-    active: dev 
+  # profiles:
+  #   active: dev 
   banner:
     location: classpath:banner.txt 
   cloud: 
