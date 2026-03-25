@@ -120,3 +120,20 @@ springdoc:
       client-id: ${keycloak.resource}
       client-secret: ${keycloak.credentials.secret}
       use-pkce-with-authorization-code-grant: false
+
+redis:
+  host: localhost
+  port: 6379
+
+wsocket:
+  destination:
+    prefix: /app
+  broker:
+    topic-prefix: /topic
+    user-prefix: /queue
+  endpoints:
+    path: /ws
+  notification:
+    endpoint: /queue/notifications
+  broadcast:
+    endpoint: /topic/notifications
