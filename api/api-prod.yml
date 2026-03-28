@@ -7,7 +7,7 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: http://networklb-87388ab3ca5946e6.elb.ap-south-1.amazonaws.com/realms/auraDOCS
+          issuer-uri: http://abndms.abansgroup.com/realms/auraDOCS
           # jwk-set-uri: http://keycloak:8080/auth/realms/auraDOCS/protocol/openid-connect/certs
   
 eureka:
