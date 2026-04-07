@@ -44,10 +44,6 @@ site:
   file-share:
     url: http://localhost:9191/share-doc/view/
 
-
-server:
-  port: 0
-
 archive:
   location: /var/tmp/auradocsv4
   identity: archive_1

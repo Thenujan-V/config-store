@@ -56,8 +56,6 @@ vehicle:
     model: cross over
 duration: all
 
-server:
-  port: 0
 
 management:
   tracing:

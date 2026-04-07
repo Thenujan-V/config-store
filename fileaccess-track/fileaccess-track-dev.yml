@@ -30,9 +30,6 @@ eureka:
     # hostname: localhost
 
 
-server:
-  port: 0
-
 management: 
   tracing: 
     sampling: 

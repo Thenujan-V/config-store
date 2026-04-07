@@ -37,10 +37,6 @@ keycloak:
     password: Theivarani7400@
     client-id: admin-cli
 
-
-server:
-  port: 0
-
 management: 
   tracing: 
     sampling: 

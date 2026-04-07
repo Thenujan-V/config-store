@@ -29,9 +29,6 @@ eureka:
     instance-id: ${spring.application.name}-${random.int}
     # hostname: localhost
 
-server:
-  port: 0
-
 archive:
   location: /var/tmp/auradocsv4
   identity: archive_1

@@ -43,9 +43,6 @@ openapi:
   service:
     url: http://localhost:9191
 
- 
-server:
-   port: 0
 
 files:
   thumbs-location: /var/tmp/auradocsv4/thumbs

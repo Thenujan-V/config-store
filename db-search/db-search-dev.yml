@@ -32,10 +32,6 @@ eureka:
     instance-id: ${spring.application.name}-${random.int}
     # hostname: localhost
 
-  
-server:
-   port: 0
-
 files:
   thumbs-location: /var/tmp/auradocsv4/thumbs
   archive-location: /var/tmp/auradocsv4

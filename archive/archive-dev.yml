@@ -34,9 +34,6 @@ eureka:
     instance-id: ${spring.application.name}-${random.int}
     # hostname: localhost
 
-server:
-  port: 0
-
 services:
   authentication: http://authentication/services
   user:
