@@ -48,7 +48,7 @@ archive:
   location: /var/tmp/auradocsv4
   identity: archive_1
   pending-docs:
-    location: /var/tmp/auradocsv4/archive/documents
+    location: /var/tmp/auradocsv4/in_folder
   signature-img: signature
   thumbs-location: /var/tmp/auradocsv4/thumbs
 temp:
