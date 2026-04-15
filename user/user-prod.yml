@@ -28,10 +28,6 @@ eureka:
     instance-id: ${spring.application.name}-${random.int}
     # hostname: localhost
 
-openapi:
-  service:
-    url: http://api-service:8080
-
 keycloak:
   auth-server-url: http://keycloak:8080/auth
   realm: auraDOCS
@@ -46,3 +42,7 @@ management:
       enabled: false
     reactive-elasticsearch:
       enabled: false
+
+openapi:
+  service:
+    url: http://api-service:8080
