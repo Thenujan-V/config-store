@@ -1,0 +1,12 @@
+version: '4.0.0'
+
+volumes:
+  config_data:
+
+services:
+
+  config-store:
+    image: thenuzv/config-store:latest
+    volumes:
+      - config_data:/shared-configs
+    restart: "no"
