@@ -9,6 +9,10 @@ spring:
         jwt:
           # issuer-uri: http://abndms.abansgroup.com/realms/auraDOCS
           jwk-set-uri: http://keycloak:8080/auth/realms/auraDOCS/protocol/openid-connect/certs
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 50MB
   
 eureka:
   client:
@@ -33,7 +37,27 @@ keycloak:
 
 openapi:
   service:
-    url: http://api-service:8080
+    title: AuraDocs V4 REST API
+    description: Official REST API for AuraDocs V4 — a document management and workflow automation platform.
+    version: 1.0.0
+    url: https://abndms.abansgroup.com/api
+  contact:
+    name: AuraDOT PVT Ltd.
+    email: contact@auradot.com
+  keycloak:
+    token-url: https://abndms.abansgroup.com/auth/realms/auraDOCS/protocol/openid-connect/token
+springdoc: 
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /apidocs
+    oauth:
+      clientId: ${keycloak.resource}
+      clientSecret: ${keycloak.credentials.secret}
+    init-oauth: 
+      client-id: ${keycloak.resource}
+      client-secret: ${keycloak.credentials.secret}
+      use-pkce-with-authorization-code-grant: false
 
 management:
   health:
