@@ -11,8 +11,8 @@ spring:
           jwk-set-uri: http://keycloak:8080/auth/realms/auraDOCS/protocol/openid-connect/certs
   servlet:
     multipart:
-      max-file-size: 50MB
-      max-request-size: 50MB
+      max-file-size: 100MB
+      max-request-size: 100MB
   
 eureka:
   client:
