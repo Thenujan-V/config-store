@@ -36,6 +36,10 @@ archive:
 temp:
   location: /var/tmp/auradocsv4
   
+services:
+  search:
+    active: DB   # possible values [DB, ES]
+    cron-url: http://search/cronjobs
   
 openapi:
   service:
