@@ -37,6 +37,9 @@ keycloak:
     password: Theivarani7400@
     client-id: admin-cli
 
+keycloak-sync:
+  fixed-delay-ms: 900000
+
 management: 
   tracing: 
     sampling: 

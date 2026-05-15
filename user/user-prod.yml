@@ -50,6 +50,10 @@ keycloak:
     username: auradocs@admin
     password: auraAdmin@123
     client-id: admin-cli
+    client-secret: r3AMmVF2vlPm97SsLKSUKPPQ7yu0ou0m
+
+keycloak-sync:
+  fixed-delay-ms: 900000
 
 management:
   health:
