@@ -8,7 +8,7 @@ spring:
     hibernate:
       naming:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
-      ddl-auto: update
+      ddl-auto: validate
     database-platform: org.hibernate.dialect.MySQL8Dialect
   elasticsearch:
     uris: http://elasticsearch:9200
@@ -40,7 +40,7 @@ services:
     group-url: http://user/auth/group
     user-key: http://user/user-key
   search:
-    active: DB   # possible values [DB, ES]
+    active: ES   # possible values [DB, ES]
     cron-url: http://search/cronjobs
   fileaccess-track:
     url: http://fileaccess-track/logging

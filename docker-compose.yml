@@ -6,7 +6,7 @@ volumes:
 services:
 
   config-store:
-    image: thenuzv/config-store:4.0.0
+    image: thenuzv/config-store:latest
     volumes:
       - config_data:/shared-configs
     restart: "no"

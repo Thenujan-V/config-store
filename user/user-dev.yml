@@ -34,7 +34,7 @@ keycloak:
   realm: auraDOCS
   admin:
     username: Thenujanv@auradot.com
-    password: Theivarani7400@
+    password: Th#$FDW7400@
     client-id: admin-cli
 
 keycloak-sync:

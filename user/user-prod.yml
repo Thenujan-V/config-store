@@ -8,7 +8,7 @@ spring:
     hibernate:
       naming:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
-      ddl-auto: update
+      ddl-auto: validate
     database-platform: org.hibernate.dialect.MySQL8Dialect
   data:
     elasticsearch:
@@ -20,7 +20,7 @@ services:
   archive:
     url: http://archive/metadata
   search: 
-    active: DB   # possible values [DB, ES]
+    active: ES   # possible values [DB, ES]
     cron-url: http://search/cronjobs
   fileaccess-track:
     url: http://fileaccess-track/logging
@@ -51,6 +51,7 @@ keycloak:
     password: auraAdmin@123
     client-id: admin-cli
     client-secret: r3AMmVF2vlPm97SsLKSUKPPQ7yu0ou0m
+    session-client-id: auradocs
 
 keycloak-sync:
   fixed-delay-ms: 900000
