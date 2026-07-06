@@ -67,6 +67,12 @@ management:
 hystrix:
   timeout: 5000
   
+cron:
+  es-index:
+    batch-size: 1000
+  encryption:
+    batch-size: 20
+    
 services:
   user: 
     url: http://user/micro
