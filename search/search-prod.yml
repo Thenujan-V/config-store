@@ -48,9 +48,9 @@ auradocs:
       root-path: /var/tmp/auradocsv4
       temp-path: /var/tmp/auradocsv4/temp
       # nginx serves root-path and validates the secure_link hash; see docs/nginx-storage.conf.example
-      public-base-url: ${AURADOCS_LOCAL_PUBLIC_URL:https://abndms.abansgroup.com}
+      public-base-url: ${AURADOCS_LOCAL_PUBLIC_URL:https://absecuritas.eastus.cloudapp.azure.com}
       public-path-prefix: /files
-      secure-link-secret: ${AURADOCS_SECURE_LINK_SECRET:fhdgxdchvhkjnhuh345y7yugfyuhkjpouttdseawrzfgvmkguyrse56t76sedxew32ert}
+      secure-link-secret: ${AURADOCS_SECURE_LINK_SECRET:fhdgxdchvhkjnhuh345y7yugfyuhkjpouttdseawrzfgvmkguyrse56t76sedxew32ert56rtygu8uoilVjG5dyg1CmPMeCx6d7662SN9OyVh40oki87yhgfre3wsC}
     s3:
       endpoint: ${AURADOCS_S3_ENDPOINT:} # blank for AWS S3; http://localhost:9000 for MinIO
       region: ${AWS_REGION:ap-south-1}

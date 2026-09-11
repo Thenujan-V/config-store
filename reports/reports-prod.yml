@@ -55,7 +55,7 @@ openapi:
 
 app:
   cors:
-    allowed-origins: ${APP_BASE_URL:https://hutchdms.hutchison.lk}
+    allowed-origins: ${APP_BASE_URL:https://absecuritas.eastus.cloudapp.azure.com}
 
 management:
   health:

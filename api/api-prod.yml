@@ -40,12 +40,12 @@ openapi:
     title: AuraDocs V4 REST API
     description: Official REST API for AuraDocs V4 — a document management and workflow automation platform.
     version: 1.0.0
-    url: ${APP_BASE_URL:https://hutchdms.hutchison.lk}/api
+    url: ${APP_BASE_URL:https://absecuritas.eastus.cloudapp.azure.com}/api
   contact:
     name: AuraDOT PVT Ltd.
     email: contact@auradot.com
   keycloak:
-    token-url: ${APP_BASE_URL:https://hutchdms.hutchison.lk}/auth/realms/auraDOCS/protocol/openid-connect/token
+    token-url: ${APP_BASE_URL:https://absecuritas.eastus.cloudapp.azure.com}/auth/realms/auraDOCS/protocol/openid-connect/token
 springdoc: 
   api-docs:
     path: /api-docs
@@ -68,7 +68,7 @@ management:
 
 app:
   cors:
-    allowed-origins: ${APP_BASE_URL:https://hutchdms.hutchison.lk}
+    allowed-origins: ${APP_BASE_URL:https://absecuritas.eastus.cloudapp.azure.com, http://absecuritas.eastus.cloudapp.azure.com}
 
 
 redis:
