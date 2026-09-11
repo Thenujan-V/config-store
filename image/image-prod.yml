@@ -61,7 +61,7 @@ services:
     url: http://notification/sms-manager
 
 link:
-  external-viewer: https://abndms.abansgroup.com/viewer/
+   external-viewer: ${APP_BASE_URL:https://hutchdms.hutchison.lk}/viewer/
 
 jodconverter:
   local:
