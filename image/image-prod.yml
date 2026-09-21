@@ -1,9 +1,9 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://auradocs.cf800uasaez3.ap-south-1.rds.amazonaws.com:3306/auradocs_v4?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&useSSL=false
-    username: root
-    password: kZzLkzMdkl2fzysZu2mO
+    url: jdbc:mysql://auradocslive.mysql.database.azure.com:3306/auradocs_ab_securitasv4?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&useSSL=true&requireSSL=true&verifyServerCertificate=false
+    username: abs_v4
+    password: kGzEYzKdkl2fzysZu4mR
   jpa:
     hibernate:
       naming:
@@ -61,7 +61,7 @@ services:
     url: http://notification/sms-manager
 
 link:
-   external-viewer: ${APP_BASE_URL:https://absecuritas.eastus.cloudapp.azure.com}/viewer/
+   external-viewer: http://absecuritas.southindia.cloudapp.azure.com/viewer/
 
 jodconverter:
   local:

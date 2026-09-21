@@ -1,9 +1,9 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://auradocs.cf800uasaez3.ap-south-1.rds.amazonaws.com:3306/auradocs_v4?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&useSSL=false
-    username: root
-    password: kZzLkzMdkl2fzysZu2mO
+    url: jdbc:mysql://auradocslive.mysql.database.azure.com:3306/auradocs_ab_securitasv4?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&useSSL=true&requireSSL=true&verifyServerCertificate=false
+    username: abs_v4
+    password: kGzEYzKdkl2fzysZu4mR
   jpa:
     hibernate:
       naming:
@@ -47,10 +47,10 @@ keycloak:
   auth-server-url: http://keycloak:8080/auth
   realm: auraDOCS
   admin:
-    username: auradocs@admin
-    password: auraAdmin@123
+    username: abans_security@auradocs
+    password: abans@security
     client-id: admin-cli
-    client-secret: r3AMmVF2vlPm97SsLKSUKPPQ7yu0ou0m
+    client-secret: 8t3ABrN4x6lSg9WU6YbQw1mG59b132aR
     session-client-id: auradocs
 
 keycloak-sync:
