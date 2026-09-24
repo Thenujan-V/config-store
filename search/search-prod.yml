@@ -48,7 +48,7 @@ auradocs:
       root-path: /var/tmp/auradocsv4
       temp-path: /var/tmp/auradocsv4/temp
       # nginx serves root-path and validates the secure_link hash; see docs/nginx-storage.conf.example
-      public-base-url: http://absecuritas.southindia.cloudapp.azure.com
+      public-base-url: https://absecuritas-staging.auradocs.com
       public-path-prefix: /files
       secure-link-secret: ${AURADOCS_SECURE_LINK_SECRET:56rtygu8uoilVjG5dyg1CmPMeCx6d7662SN9OyVh40oki87yhgfre3wsC}
     s3:

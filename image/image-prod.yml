@@ -61,7 +61,7 @@ services:
     url: http://notification/sms-manager
 
 link:
-   external-viewer: http://absecuritas.southindia.cloudapp.azure.com/viewer/
+   external-viewer: https://absecuritas-staging.auradocs.com/viewer/
 
 jodconverter:
   local:
