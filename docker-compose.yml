@@ -11,5 +11,5 @@ services:
       - config_data:/shared-configs
     restart: "no"
 
-#docker build -t auradocsv4/auradocsv4_abans:config-store-latest .
-#docker push auradocsv4/auradocsv4_abans:config-store-latest
+#docker build -t auradocsv4/auradocsv4_hutch:config-store-latest .
+#docker push auradocsv4/auradocsv4_hutch:config-store-latest
