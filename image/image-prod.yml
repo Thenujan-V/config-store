@@ -148,3 +148,6 @@ auradocs:
       connection-string: ${AZURE_STORAGE_CONNECTION_STRING:}   # keep secret out of git
       container: ${AZURE_BLOB_CONTAINER:}
       create-container-if-missing: true
+  thumbs:
+    url-ttl: PT30M          # how long a signed thumbnail URL stays valid
+    url-cache-bucket: PT15M # expiry is rounded up to this, so URLs stay browser-cacheable
