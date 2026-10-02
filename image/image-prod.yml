@@ -136,6 +136,9 @@ auradocs:
     local:
       root-path: /var/tmp/auradocsv4
       temp-path: /var/tmp/auradocsv4/temp
+      public-base-url: https://absecuritas-staging.auradocs.com
+      public-path-prefix: /files
+      secure-link-secret: ${AURADOCS_SECURE_LINK_SECRET:56rtygu8uoilVjG5dyg1CmPMeCx6d7662SN9OyVh40oki87yhgfre3wsC}
     s3:
       endpoint: ${AURADOCS_S3_ENDPOINT:} # blank for AWS S3; http://localhost:9000 for MinIO
       region: ${AWS_REGION:}

@@ -11,16 +11,16 @@ spring:
       ddl-auto: update
     database-platform: org.hibernate.dialect.MySQL8Dialect
   mail:
-    host: smtp.gmail.com
-    port: 587
-    username: auradocs-info@gmail.com
-    password: vicslqxelpvxbbxg
+    host: 203.143.23.64
+    port: 33443
+    username: abs.dms
+    password: Abs.abs@#$126
     properties:
       mail: 
         smtp: 
           auth: true
           starttls:
-            enable: true
+            enable: false
   data:
     elasticsearch:
       repositories:
