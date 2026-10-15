@@ -11,13 +11,13 @@ spring:
       ddl-auto: update
     database-platform: org.hibernate.dialect.MySQL8Dialect
   mail:
-    host: 203.143.23.64
+    host: 203.143.23.68
     port: 33443
     username: abs.dms
     password: Abs.abs@#$126
     properties:
-      mail: 
-        smtp: 
+      mail:
+        smtp:
           auth: true
           starttls:
             enable: false
