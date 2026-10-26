@@ -6,10 +6,10 @@ volumes:
 services:
 
   config-store:
-    image: thenuzv/config-store:latest
+    image: thenuzv/config-store:4.0.0
     volumes:
       - config_data:/shared-configs
     restart: "no"
 
-#docker build -t auradocsv4/auradocsv4_hutch:config-store-latest .
-#docker push auradocsv4/auradocsv4_hutch:config-store-latest
+#docker build -t auradocsv4/auradocsv4_hutch:config-store-4.0.0 .
+#docker push auradocsv4/auradocsv4_hutch:config-store-4.0.0

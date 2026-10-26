@@ -11,10 +11,10 @@ spring:
       ddl-auto: update
     database-platform: org.hibernate.dialect.MySQL8Dialect
   mail:
-    host: smtp.gmail.com
+    host: smtp.office365.com
     port: 587
-    username: vthenujan7400@gmail.com
-    password: vicslqxelpvxbbxg
+    username: hutchdms_notifications@hutchison.lk
+    password: w#z!3RtpD5
     properties:
       mail: 
         smtp: 
